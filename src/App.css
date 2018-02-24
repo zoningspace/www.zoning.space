@@ -18,7 +18,7 @@ nav {
   width: 100%;
   padding-left: 10px;
   height: 65px;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 nav *, .map-layers * {
@@ -61,6 +61,9 @@ nav a:active, .map-layes a:active {
   color: #fff;
   background-color: #000;
   z-index: 1000;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px
 }
 
 .map-layer-selected {
@@ -70,11 +73,13 @@ nav a:active, .map-layes a:active {
 
 .map-legend {
   position: absolute;
-  right: 0;
-  top: 115px;
+  left: 0;
+  top: 65px;
   color: #fff;
   background-color: #000;
   z-index: 1000;
+  padding: 15px;
+  border-bottom-right-radius: 10px;
 }
 
 /* scroll down button on map */
@@ -82,14 +87,32 @@ nav a:active, .map-layes a:active {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ddd;
+  background-color: #000;
   width: 100px;
   height: 50px;
   bottom: 50px;
   font-size: 45px;
-  color: #333;
+  color: #fff;
   text-align: center;
   z-index: 1000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.map-next a:link {
+  color: inherit;
+}
+
+.map-next a:visited {
+  color: inherit;
+}
+
+.map-next a:hover {
+  color: inherit;
+}
+
+.map-next a:active {
+  color: inherit;
 }
 
 /* policyclub logo is just CSS-styled text */

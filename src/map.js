@@ -86,7 +86,7 @@ export default class Map extends Component {
           height: '100%'
         }}
       />
-      <div className='map-next'><a title='Jump to content' href='#content'>&#9660;</a></div>
+      <div className='map-next'><a title='Jump to content' href='#content'><span class='fas fa-chevron-down' /></a></div>
     </div>
   }
 }
