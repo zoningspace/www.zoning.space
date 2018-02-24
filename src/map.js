@@ -12,6 +12,15 @@ const SAN_JOSE = [-121.9, 37.333, 11]
 const LOS_ANGELES = [-118.5, 34.05, 9]
 const SAN_DIEGO = [-117.163, 32.9, 10]
 
+const LEGENDS = {
+  PARKING: [
+    { color: '#bdd7e7', label: 'Less than 0.5 spaces/unit' },
+    { color: '#6baed6', label: 'At least 0.5, less than 1 spaces/unit' },
+    { color: '#3182bd', label: 'At least 1, less than 2 spaces/unit' },
+    { color: '#08519c', label: 'At least 2 spaces/unit'}
+  ]
+}
+
 /** The map */
 export default class Map extends Component {
   state = {
@@ -60,6 +69,12 @@ export default class Map extends Component {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className='map-legend'>
+        {LEGENDS[layer].map(({color, label}) => <div>
+          <div style={{ width: 30, height: 15, backgroundColor: color, display: 'inline-block', marginRight: 8, marginLeft: 4 }} />{label}
+        </div>)}
       </div>
 
       <GlMap
