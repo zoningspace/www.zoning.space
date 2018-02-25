@@ -64,11 +64,13 @@ nav a:active, .map-layes a:active {
   z-index: 1000;
   padding-left: 10px;
   padding-bottom: 5px;
+  padding-right: 5px;
   border-bottom-left-radius: 10px
 }
 
 .map-layer-selected {
   box-shadow: 0px 0px 20px #fff;
+  background-color: #777;
   border-radius: 20px
 }
 

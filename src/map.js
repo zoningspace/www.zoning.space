@@ -51,6 +51,33 @@ export default class Map extends Component {
 
     return <div className='map-container'>
       <div className='map-layers'>
+        {/* TODO assistive technology */}
+        <ul>
+          <li>
+            <a
+               className={layer == 'PARKING' ? 'map-layer-selected' : null}
+               href='#' title='Parking'
+               onClick={e => this.setState({ layer: 'PARKING' })}>
+               Parking
+             </a>
+          </li>
+          <li>
+            <a
+              className={layer == 'HEIGHT' ? 'map-layer-selected' : null}
+              href='#' title='Height Limits' onClick={e => this.setState({ layer: 'HEIGHT' })}>
+              Height
+            </a>
+          </li>
+          <li>
+            <a
+              className={layer == 'DENSITY' ? 'map-layer-selected' : null}
+              href='#' title='Density Restrictions'
+              onClick={e => this.setState({ layer: 'DENSITY' })}>
+              Density
+            </a>
+          </li>
+        </ul>
+
         {/* Links to jump to parts of the state, thanks @esiroky for the idea */}
         <ul>
           <li><a href='#' title='Sacramento' onClick={e => this.setState({ location: SACRAMENTO })}>Sac</a></li>
@@ -59,33 +86,6 @@ export default class Map extends Component {
           <li><a href='#' title='San José' onClick={e => this.setState({ location: SAN_JOSE })}>SJ</a></li>
           <li><a href='#' title='Los Angeles' onClick={e => this.setState({ location: LOS_ANGELES })}>LA</a></li>
           <li><a href='#' title='San Diego' onClick={e => this.setState({ location: SAN_DIEGO })}>SD</a></li>
-        </ul>
-
-        {/* TODO assistive technology */}
-        <ul>
-          <li>
-            <a
-               className={layer == 'PARKING' ? 'map-layer-selected' : null}
-               href='#' title='Parking'
-               onClick={e => this.setState({ layer: 'PARKING' })}>
-               <span class='fas fa-car' />
-             </a>
-          </li>
-          <li>
-            <a
-              className={layer == 'HEIGHT' ? 'map-layer-selected' : null}
-              href='#' title='Height Limits' onClick={e => this.setState({ layer: 'HEIGHT' })}>
-              <span class='fas fa-building' />
-            </a>
-          </li>
-          <li>
-            <a
-              className={layer == 'DENSITY' ? 'map-layer-selected' : null}
-              href='#' title='Density Restrictions'
-              onClick={e => this.setState({ layer: 'DENSITY' })}>
-              <span class='fas fa-users' />
-            </a>
-          </li>
         </ul>
       </div>
 
