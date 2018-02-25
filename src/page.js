@@ -41,6 +41,7 @@ export default class Page extends Component {
         the <a href='http://docs.zoning.space'>documentation site</a>.
       </p>
 
+      {/*
       <h2>How can I use the data?</h2>
       <p>The Zoning.Space software stack is licensed under [INSERT LICENSE HERE], while the original data produced
         by the Zoning.Space team by digitizing municipal codes is licensed under [INSERT LICENSE HERE]. Additionally,
@@ -52,6 +53,7 @@ export default class Page extends Component {
       <p>We think it's pretty good. However, like anything, it can be improved. In the spirit of transparency and
         crowdsourcing, we have a public issue tracker documenting known issues with the data, and a list of assumptions
         that were made during the digitization process. [INSERT LINKS]</p>
+        */}
 
       <h2>Who's behind this?</h2>
       <p>A team of volunteers:
