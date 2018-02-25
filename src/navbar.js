@@ -7,7 +7,7 @@ export default class Navbar extends Component {
     return <nav>
       <h2>Zoning.Space</h2>
       <ul>
-        <li><a href='https://docs.zoning.space'>Docs</a></li>
+        <li><a href='https://zoningspace.readthedocs.io/en/latest/'>Docs</a></li>
       </ul>
     </nav>
   }
