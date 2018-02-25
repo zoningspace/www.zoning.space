@@ -18,13 +18,25 @@ const LEGENDS = {
     { color: '#6baed6', label: 'At least 0.5, less than 1 spaces/unit' },
     { color: '#3182bd', label: 'At least 1, less than 2 spaces/unit' },
     { color: '#08519c', label: 'At least 2 spaces/unit'}
+  ],
+  HEIGHT: [
+    { color: '#bdd7e7', label: '0–10 meters (0-33 feet)' },
+    { color: '#6baed6', label: '10–20 meters (33-66 feet)' },
+    { color: '#3182bd', label: '20–30 meters (66-98 feet)' },
+    { color: '#08519c', label: 'More than 30 meters (98 feet)' }
+  ],
+  DENSITY: [
+    { color: '#bdd7e7', label: '0–40 units/hectare (0-16 units/acre)' },
+    { color: '#6baed6', label: '40–80 units/hectare (16-32 units/acre)' },
+    { color: '#3182bd', label: '80-120 units/hectare (32–49 units/acre)' },
+    { color: '#08519c', label: 'More than 120 units/hectare (49 units/acre)' }
   ]
 }
 
 const STYLES = {
   'PARKING': 'mapbox://styles/mattwigway/cje107x6x3cuf2rqqx4jopwnv',
-  'DENSITY': 'mapbox://',
-  'HEIGHT': 'mapbox://'
+  'DENSITY': 'mapbox://styles/mattwigway/cje23i5ok87ku2snrj6evxgc3',
+  'HEIGHT': 'mapbox://styles/mattwigway/cje232hm31lm72rm2680motp6'
 }
 
 /** The map */
