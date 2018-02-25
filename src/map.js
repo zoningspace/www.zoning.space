@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactMapboxGl, { Layer } from 'react-mapbox-gl'
+import ReactMapboxGl, { ZoomControl } from 'react-mapbox-gl'
 
 // please don't steal my mapbox key, I'm a poor grad student
 // https://geoplan.asu.edu/matthew-conway
@@ -102,8 +102,9 @@ export default class Map extends Component {
         containerStyle={{
           width: '100%',
           height: '100%'
-        }}
-      />
+        }}>
+        <ZoomControl position='bottom-right' />
+      </GlMap>
       <div className='map-next'><a title='Jump to content' href='#content'><span class='fas fa-chevron-down' /></a></div>
     </div>
   }
