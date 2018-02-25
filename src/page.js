@@ -38,22 +38,23 @@ export default class Page extends Component {
       <p>Due to file size, complexity, and the early stage of the project, we're not currently offering processed,
         GIS-ready data for download. You will need to run the Zoning.Space software stack to assemble raw data provided
         by municipal governments into a seamless, standardized file. You can learn how to do this on
-        the <a href='http://docs.zoning.space'>documentation site</a>.
+        the <a href='http://docs.zoning.space'>documentation site</a>. The software stack is
+        available <a href='https://github.com/zoningspace/zoning.space'>on GitHub</a>.
       </p>
 
-      {/*
       <h2>How can I use the data?</h2>
-      <p>The Zoning.Space software stack is licensed under [INSERT LICENSE HERE], while the original data produced
-        by the Zoning.Space team by digitizing municipal codes is licensed under [INSERT LICENSE HERE]. Additionally,
-        since the zoning data is derived from data provided by municipalities (e.g. spatial data on zoning regulations,
+      <p>The Zoning.Space software stack is licensed under Apache 2.0, while the original data produced
+        by the Zoning.Space team by digitizing municipal codes is licensed under the Open Database License. Since the zoning data
+        is derived from data provided by municipalities (e.g. spatial data on zoning regulations,
         and descriptions of those regulations in the municipal code), there may be additional restrictions which vary
         from munipality to munipality.</p>
 
       <h2>How good is the data?</h2>
       <p>We think it's pretty good. However, like anything, it can be improved. In the spirit of transparency and
-        crowdsourcing, we have a public issue tracker documenting known issues with the data, and a list of assumptions
-        that were made during the digitization process. [INSERT LINKS]</p>
-        */}
+        crowdsourcing, we have a <a href='https://github.com/zoningspace/zoning.space/issues'>public issue tracker</a>
+        ocumenting known issues with the data, and
+        a <a href='https://github.com/zoningspace/zoning.space/blob/master/LIMITATIONS_AND_ASSUMPTIONS.md'>list of assumptions</a>
+        that were made during the digitization process.</p>
 
       <h2>Who's behind this?</h2>
       <p>A team of volunteers:
@@ -66,6 +67,8 @@ export default class Page extends Component {
       <h2>How can I get in touch with you?</h2>
       <p>Want to contribute? Have an idea for a project to do with the data? Drop us a line at&nbsp;
         <a href='mailto:hello@zoning.space'>hello@zoning.space</a>.</p>
+
+      <p><i>Color schemes from <a href='http://colorbrewer2.org'>ColorBrewer</a>.</i></p>
     </div>
   }
 }
