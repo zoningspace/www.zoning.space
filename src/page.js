@@ -30,7 +30,7 @@ export default class Page extends Component {
 
       <h2>How can I contribute to Zoning.Space?</h2>
       <p>We're always looking for more people to help digitize zoning data! Head on over to
-        our <a href='http://docs.zoning.space'>documentation site</a> to get started, and don't hesitate
+        our <a href='https://zoningspace.readthedocs.io/en/latest/'>documentation site</a> to get started, and don't hesitate
         to <a href='mailto:hello@zoning.space'>drop us a line</a> with any questions. You'll need some basic skills
         with <tt>git</tt> and running programs from the command line.</p>
 
@@ -38,7 +38,7 @@ export default class Page extends Component {
       <p>Due to file size, complexity, and the early stage of the project, we're not currently offering processed,
         GIS-ready data for download. You will need to run the Zoning.Space software stack to assemble raw data provided
         by municipal governments into a seamless, standardized file. You can learn how to do this on
-        the <a href='http://docs.zoning.space'>documentation site</a>. The software stack is
+        the <a href='https://zoningspace.readthedocs.io/en/latest/'>documentation site</a>. The software stack is
         available <a href='https://github.com/zoningspace/zoning.space'>on GitHub</a>.
       </p>
 
