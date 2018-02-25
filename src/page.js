@@ -48,6 +48,11 @@ export default class Page extends Component {
         and descriptions of those regulations in the municipal code), there may be additional restrictions which vary
         from munipality to munipality.</p>
 
+      <h2>How good is the data?</h2>
+      <p>We think it's pretty good. However, like anything, it can be improved. In the spirit of transparency and
+        crowdsourcing, we have a public issue tracker documenting known issues with the data, and a list of assumptions
+        that were made during the digitization process. [INSERT LINKS]</p>
+
       <h2>Who's behind this?</h2>
       <p>A team of volunteers:
         <ul>
