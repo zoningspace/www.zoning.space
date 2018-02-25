@@ -118,6 +118,11 @@ nav a:active, .map-layes a:active {
   color: inherit;
 }
 
+.content-anchor {
+  display: block;
+  height: 65px; /* so that when scrolling to the anchor the nav doesn't cover the text */
+}
+
 footer {
   padding-left: 3%;
   padding-top: 7px;

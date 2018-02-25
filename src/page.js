@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 export default class Page extends Component {
   render () {
     return <div class='content'>
-      <a name='content' />
+      <a name='content' class='content-anchor' />
       <p>
         Zoning.Space is an open, crowdsourced, machine-readable database of municipal residential zoning regulations.
         Municipal zoning is a major determinant of urban land use, environmental sustainability, and housing affordability.
