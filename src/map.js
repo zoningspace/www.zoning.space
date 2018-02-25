@@ -3,7 +3,7 @@ import ReactMapboxGl, { Layer } from 'react-mapbox-gl'
 
 // please don't steal my mapbox key, I'm a poor grad student
 // https://geoplan.asu.edu/matthew-conway
-const GlMap = ReactMapboxGl({ accessToken: 'pk.eyJ1IjoibWF0dHdpZ3dheSIsImEiOiJjaWg1bm4yc24wMWRvdXFqOTkzZXQ1dWFzIn0.L5Hpv5qCL6o3IdnwtgsspQ' })
+const GlMap = ReactMapboxGl({ accessToken: 'pk.eyJ1IjoibWF0dHdpZ3dheSIsImEiOiJjamUweXRnOHkwenMxMnhxbDVhNjByZms5In0.WSXmPLgk-icDoMoY7zkz2Q' })
 
 const SACRAMENTO = [-121.469, 38.556, 11]
 const SAN_FRANCISCO = [-122.423, 37.763, 12]
@@ -19,6 +19,12 @@ const LEGENDS = {
     { color: '#3182bd', label: 'At least 1, less than 2 spaces/unit' },
     { color: '#08519c', label: 'At least 2 spaces/unit'}
   ]
+}
+
+const STYLES = {
+  'PARKING': 'mapbox://styles/mattwigway/cje107x6x3cuf2rqqx4jopwnv',
+  'DENSITY': 'mapbox://',
+  'HEIGHT': 'mapbox://'
 }
 
 /** The map */
@@ -78,7 +84,7 @@ export default class Map extends Component {
       </div>
 
       <GlMap
-        style='mapbox://styles/mattwigway/cje107x6x3cuf2rqqx4jopwnv'
+        style={STYLES[layer]}
         center={location.slice(0, 2)}
         zoom={[location[2]]}
         containerStyle={{
